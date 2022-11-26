@@ -1,0 +1,6 @@
+/* Browser reset and wire frame. */
+* {
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+}
