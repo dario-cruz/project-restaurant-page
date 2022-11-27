@@ -10,7 +10,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Darios Restaurant',
+            title: 'CarbHouse: Breads and Pastries!',
         }),
     ],
     devtool: 'inline-source-map',

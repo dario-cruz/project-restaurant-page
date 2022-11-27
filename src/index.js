@@ -1,4 +1,5 @@
 import { renderNav } from "./components/navbar";
+import './style.css'
 
 const pageContainer = document.createElement('div')
 pageContainer.setAttribute('id', 'container')
