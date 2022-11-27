@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: grid;
+    grid-template: 80px / 20% 80%;
+    grid-template-areas: "left right";
+}
+.navbar >.left-side {
+    grid-area: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar > .right-side {
+    grid-area: right;
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    grid-template-areas: "menu directions about";
+}
+
+.right-side > .menu {
+    grid-area: menu;
+}
+.right-side > .directions {
+    grid-area: directions;
+}
+.right-side > .about {
+    grid-area: about;
+}
