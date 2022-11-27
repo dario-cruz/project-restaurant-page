@@ -1,8 +1,10 @@
-// Importing all needed content.
-import './style.css'
+import { renderNav } from "./components/navbar";
 
+const pageContainer = document.createElement('div')
+pageContainer.setAttribute('id', 'container')
+document.body.appendChild(pageContainer)
+console.log(pageContainer)
 
-const mainPage = () => {
-    const navBar = document.createElement('div').className('navbar')
-    
-}
+renderNav()
+
+export {pageContainer}

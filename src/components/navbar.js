@@ -1,6 +1,7 @@
+import { pageContainer } from ".."
+
 const renderNav = () => {
     // Define elements to be added.
-    const pageContainter = document.querySelector('#content')
     
     const navBar = document.createElement('div')
     navBar.setAttribute('class', 'navbar')
@@ -12,25 +13,40 @@ const renderNav = () => {
     const leftDiv = document.createElement('div')
     leftDiv.setAttribute('class', 'left-side')
     leftDiv.style.gridArea = 'left'
+    const titleText = document.createElement('h1')
+    titleText.innerText = "Bobs Burgers"
+    leftDiv.innerHTML = `${titleText}`
 
     const rightDiv = document.createElement('div')
     rightDiv.setAttribute = ('class', 'right-side')
     rightDiv.style.gridArea = 'right'
-    
-    const titleText = document.createElement('h1')
-    titleText.innerText = "Bobs Burgers"
+    rightDiv.style.display = 'grid'
+    rightDiv.style.gridColumn = "1fr 1fr 1fr"
+    rightDiv.style.gridTemplateAreas = '"menu directions about"'
 
     const navMenu = document.createElement('div')
+    navMenu.setAttribute('class', 'menu')
     navMenu.innerHTML = `<h1 class="menu">Menu</h1>`
-    
+    navMenu.style.gridArea = "menu"
+    rightDiv.appendChild(navMenu)
 
-    
-    // Define content.
-    leftDiv.innerHTML = `${titleText}`
+    const navDirections = document.createElement('div')
+    navDirections.setAttribute('class', 'directions')
+    navDirections.innerHTML = `<h1 class="directions">Directions</h1>`
+    navDirections.style.gridArea = "directions"
+    rightDiv.appendChild(navDirections)
 
+    const navAbout = document.createElement('div')
+    navAbout.setAttribute('class', 'about')
+    navAbout.innerHTML = `<h1 class="about">About</h1>`
+    navAbout.style.gridArea = "about"
+    rightDiv.appendChild(navAbout)
 
-    // Set css attributes. 
+    navBar.appendChild(leftDiv)
+    navBar.appendChild(rightDiv)
 
-
-
+    pageContainer.appendChild(navBar)
 }
+
+
+export {renderNav}
