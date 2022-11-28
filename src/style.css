@@ -6,6 +6,15 @@
     /* border: 2px solid black; */
 }
 
+html {
+    background: url(./imgs/carbhouse-background.jpg) no-repeat center center fixed;
+    -webkit-backgroundsize: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 body {
     background-color: #f7f3e3;
 }
