@@ -5,6 +5,14 @@
     box-sizing: border-box;
     /* border: 2px solid black; */
 }
+/* Color paller for the site. */
+:root {
+    --off-white: #f7f3e3;
+    --brown-red: #6f1a07;
+    --grey-black: #2b2118;
+    --light-brown: #a77e58;
+    --teal-green: #2f9c95;
+}
 
 html {
     background: url(./imgs/carbhouse-background.jpg) no-repeat center center fixed;
@@ -14,7 +22,12 @@ html {
     background-size: cover;
 }
 
+#content {
+    display: grid;
+    grid-template-areas: 100px 4fr 1fr / ;
+}
+
 
 body {
-    background-color: #f7f3e3;
+    background-color: var(--off-white);
 }

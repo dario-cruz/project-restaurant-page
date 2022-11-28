@@ -28,7 +28,7 @@
     align-items: center;
     font-family: "Krona";
     padding-left: 15px;
-    color: #2b2118;
+    color: var(--off-white);
 }
 .left-side > .titleslogan {
     margin-top: -5px;
@@ -41,7 +41,7 @@
     grid-template-areas: "menu directions about";
     font-family: "Krona";
     font-size: 8pt;
-    color: #2b2118;
+    color: var(--off-white);
 }
 .left-side > #logo {
     width: 120px;
