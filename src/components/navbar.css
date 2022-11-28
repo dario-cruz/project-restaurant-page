@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "Mallanna";
+    src: url(../fonts/Mallanna\ Regular.ttf);
+}
+@font-face {
+    font-family: "Krona";
+    src: url(../fonts/Krona\ One\ Regular.ttf);
+}
+
 .navbar {
     display: grid;
     grid-template: 80px / 1fr 1fr 1fr 1fr;
@@ -19,11 +28,13 @@
     display: grid;
     grid-column: repeat(3, 1fr);
     grid-template-areas: "menu directions about";
+    font-family: "Krona";
 }
 .left-side > #logo {
     width: 100px;
     height: 100px;
 }
+
 .right-side > .menu {
     grid-area: menu;
     display: flex;
