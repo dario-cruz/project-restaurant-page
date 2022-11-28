@@ -6,7 +6,7 @@
 
 .navbar {
     display: grid;
-    grid-template: 100px / 300px 1fr 1fr 1fr;
+    grid-template: 100px / 300px 1fr 1fr 300px;
     grid-template-areas: "left right right none";
     background-color: #a77e58;
     box-shadow: 0px 3px 5px black;
@@ -19,20 +19,21 @@
     align-items: center;
     font-family: "Krona";
     padding-left: 15px;
-    color: var(--off-white);
+    color: white;
 }
 .left-side > .titleslogan {
-    margin-top: -5px;
-    font-size: small;
+    margin-top: -15px;
+    font-size: 18pt;
+    font-family: "Mallanna";
 }
 .navbar > .right-side {
     grid-area: right;
     display: grid;
     grid-column: repeat(3, 1fr);
     grid-template-areas: "menu directions about";
-    font-family: "Krona";
-    font-size: 8pt;
-    color: var(--off-white);
+    font-family: "Mallanna";
+    font-size: 9pt;
+    color: white;
 }
 .left-side > #logo {
     width: 120px;

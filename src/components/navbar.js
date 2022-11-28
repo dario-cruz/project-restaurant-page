@@ -26,7 +26,7 @@ const renderNav = () => {
     navAbout.setAttribute('class', 'about')
     
     // Define content for elems.
-    titleText.innerText = "CarbHouse"
+    titleText.innerText = "CARBHOUSE"
     titleSlogan.innerText = "Breads and Pastries to Go!!"
     navMenu.innerHTML = `<h1 class="menu">Menu</h1>`
     navDirections.innerHTML = `<h1 class="directions">Directions</h1>`
