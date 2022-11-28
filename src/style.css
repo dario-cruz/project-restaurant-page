@@ -22,12 +22,21 @@ html {
     background-size: cover;
 }
 
-#content {
+#container {
     display: grid;
-    grid-template-areas: 100px 4fr 1fr / ;
+    grid-template: 100px 4fr 1fr / 1fr 4fr 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "left center right"
+    "left bottom right";
+    height: 100vh ;
 }
-
-
-body {
+#container > .navbar {
+    grid-area: nav;
+}
+#container > .mainpage {
+    grid-area: center;
+}
+/* body {
     background-color: var(--off-white);
-}
+} */

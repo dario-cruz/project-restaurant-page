@@ -47,4 +47,4 @@ const renderNav = () => {
 }
 
 
-export {renderNav}
+export { renderNav }
