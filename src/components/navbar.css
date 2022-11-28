@@ -29,6 +29,7 @@
     grid-column: repeat(3, 1fr);
     grid-template-areas: "menu directions about";
     font-family: "Krona";
+    color: white;
 }
 .left-side > #logo {
     width: 100px;
