@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -14,14 +15,23 @@
 
 .navbar {
     display: grid;
-    grid-template: 80px / 1fr 1fr 1fr 1fr;
+    grid-template: 100px / 300px 1fr 1fr 1fr;
     grid-template-areas: "left none right right";
+    background-color: burlywood;
 }
 .navbar >.left-side {
     grid-area: left;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Krona";
+    padding-left: 15px;
+    color: white;
+}
+.left-side > .titleslogan {
+    margin-top: -5px;
+    font-size: small;
 }
 .navbar > .right-side {
     grid-area: right;
@@ -32,8 +42,7 @@
     color: white;
 }
 .left-side > #logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
 }
 
 .right-side > .menu {

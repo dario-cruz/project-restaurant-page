@@ -1,7 +1,7 @@
 import { pageContainer } from ".."
 import './navbar.css'
-import blackLogo from '../logo/carbhouse-black.svg'
-import whiteLogo from '../logo/carbhouse-white.svg'
+import blackLogo from '../logo/carbhouse-black.webp'
+import whiteLogo from '../logo/carbhouse-white.webp'
 const renderNav = () => {
     // Define elements to be added.
     const navBar = document.createElement('div')
@@ -10,12 +10,14 @@ const renderNav = () => {
     const navMenu = document.createElement('div')
     const navDirections = document.createElement('div')
     const navAbout = document.createElement('div')
-    const myBlackLogo = new Image()
-    
+    const titleText = document.createElement('h1')
+    const titleSlogan = document.createElement('p')
+
+
     // Define Attributes
     navBar.setAttribute('class', 'navbar')
-    myBlackLogo.src = blackLogo
-    myBlackLogo.setAttribute('id', 'logo')
+    titleText.setAttribute('class', 'titletext')
+    titleSlogan.setAttribute('class', 'titleslogan')
     leftDiv.setAttribute('class', 'left-side')
     rightDiv.setAttribute('class', 'right-side')
     navMenu.setAttribute('class', 'menu')
@@ -23,6 +25,8 @@ const renderNav = () => {
     navAbout.setAttribute('class', 'about')
     
     // Define content for elems.
+    titleText.innerText = "CarbHouse"
+    titleSlogan.innerText = "Breads and Pastries to Go!!"
     navMenu.innerHTML = `<h1 class="menu">Menu</h1>`
     navDirections.innerHTML = `<h1 class="directions">Directions</h1>`
     navAbout.innerHTML = `<h1 class="about">About</h1>`
@@ -31,9 +35,13 @@ const renderNav = () => {
     rightDiv.appendChild(navMenu)
     rightDiv.appendChild(navDirections)
     rightDiv.appendChild(navAbout)
-    leftDiv.appendChild(myBlackLogo)
+
+    leftDiv.appendChild(titleText)
+    leftDiv.appendChild(titleSlogan)
+
     navBar.appendChild(rightDiv)
     navBar.appendChild(leftDiv)
+
     pageContainer.appendChild(navBar)
 }
 
