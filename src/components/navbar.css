@@ -17,7 +17,8 @@
     display: grid;
     grid-template: 100px / 300px 1fr 1fr 1fr;
     grid-template-areas: "left none right right";
-    background-color: burlywood;
+    background-color: #a77e58;
+    box-shadow: 0px 3px 5px black;
 }
 .navbar >.left-side {
     grid-area: left;
@@ -27,7 +28,7 @@
     align-items: center;
     font-family: "Krona";
     padding-left: 15px;
-    color: white;
+    color: #2b2118;
 }
 .left-side > .titleslogan {
     margin-top: -5px;
@@ -39,7 +40,7 @@
     grid-column: repeat(3, 1fr);
     grid-template-areas: "menu directions about";
     font-family: "Krona";
-    color: white;
+    color: #2b2118;
 }
 .left-side > #logo {
     width: 120px;
