@@ -14,6 +14,15 @@
     --teal-green: #2f9c95;
 }
 
+@font-face {
+    font-family: "Mallanna";
+    src: url(./fonts/Mallanna\ Regular.ttf);
+}
+@font-face {
+    font-family: "Krona";
+    src: url(./fonts/Krona\ One\ Regular.ttf);
+}
+
 html {
     background: url(./imgs/carbhouse-background.jpg) no-repeat center center fixed;
     -webkit-backgroundsize: cover;
@@ -37,6 +46,4 @@ html {
 #container > .mainpage {
     grid-area: center;
 }
-/* body {
-    background-color: var(--off-white);
-} */
+

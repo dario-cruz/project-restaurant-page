@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Mallanna";
-    src: url(../fonts/Mallanna\ Regular.ttf);
-}
-@font-face {
-    font-family: "Krona";
-    src: url(../fonts/Krona\ One\ Regular.ttf);
-}
-
 .navbar {
     display: grid;
     grid-template: 100px / 300px 1fr 1fr 1fr;
