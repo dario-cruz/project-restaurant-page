@@ -5,8 +5,8 @@
 
 .navbar {
     display: grid;
-    grid-template: 80px / 20% 80%;
-    grid-template-areas: "left right";
+    grid-template: 80px / 1fr 1fr 1fr 1fr;
+    grid-template-areas: "left none right right";
 }
 .navbar >.left-side {
     grid-area: left;
@@ -20,13 +20,25 @@
     grid-column: repeat(3, 1fr);
     grid-template-areas: "menu directions about";
 }
-
+.left-side > #logo {
+    width: 100px;
+    height: 100px;
+}
 .right-side > .menu {
     grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right-side > .directions {
     grid-area: directions;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right-side > .about {
     grid-area: about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,20 +1,20 @@
 import { pageContainer } from ".."
 import './navbar.css'
-
+import blackLogo from '../logo/carbhouse-black.svg'
+import whiteLogo from '../logo/carbhouse-white.svg'
 const renderNav = () => {
     // Define elements to be added.
-    
     const navBar = document.createElement('div')
     navBar.setAttribute('class', 'navbar')
+
+    const myBlackLogo = new Image()
+    myBlackLogo.src = blackLogo
+    myBlackLogo.setAttribute('id', 'logo')
     
     const leftDiv = document.createElement('div')
     leftDiv.setAttribute('class', 'left-side')
+    leftDiv.appendChild(myBlackLogo)
     
-    const titleText = document.createElement('h1')
-    titleText.innerText = "Bobs Burgers"
-    titleText.setAttribute('class', 'titletext')
-    leftDiv.appendChild(titleText)
-
     const rightDiv = document.createElement('div')
     rightDiv.setAttribute('class', 'right-side')
 
