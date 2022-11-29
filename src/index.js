@@ -1,6 +1,9 @@
 import './index.css'
-import { renderNav } from "./components/navbar";
 import { renderMainPage } from "./pages/mainpage";
+import { renderMenu } from './pages/menu';
+import { renderNav } from "./components/navbar";
+// import { addMenuEvents } from './components/pagechanger';
+
 
 const pageContainer = document.createElement('div')
 pageContainer.setAttribute('id', 'container')
@@ -9,6 +12,8 @@ console.log(pageContainer)
 
 
 renderNav()
-renderMainPage()
+// addMenuEvents()
+// renderMainPage()
+renderMenu()
 
 export {pageContainer}

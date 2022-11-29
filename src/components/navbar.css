@@ -41,6 +41,7 @@
     position: relative;
     text-decoration: none;
     color: white;
+    user-select: none;
 }
 .right-side > .menu > h1:hover, .right-side > .directions > h1:hover, .right-side > .about > h1:hover {
     color: white;

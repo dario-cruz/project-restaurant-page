@@ -46,6 +46,15 @@ const renderNav = () => {
     navBar.appendChild(leftDiv)
 
     pageContainer.appendChild(navBar)
+
+    return {
+        navBar,
+        leftDiv,
+        rightDiv,
+        navMenu,
+        navAbout,
+        navDirections,
+    }
 }
 
 

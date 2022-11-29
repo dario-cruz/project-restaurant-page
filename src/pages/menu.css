@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menupage {
+    background: url(../imgs/menu-background.jpg) no-repeat center center fixed;
+    -webkit-backgroundsize: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container {
+    display: grid;
+    grid-template: 100px 100px 4fr 80px / 1fr 800px 1fr;
+    grid-template-areas:
+    "nav nav nav"
+    "space space space"
+    "left center right"
+    "left bottom right";
+    height: 100vh ;
+}
+
+.menu-area {
+    padding: 10px;
+    border: 4px solid white;
+    grid-area: center;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-areas: 
+    "one two"
+    "three four"
+    "five six";
+    color: white;
+}
+
+.menu-area > .food-item-one {
+    grid-area: one;
+}
+.menu-area > .food-item-two {
+    grid-area: two;
+}
+.menu-area > .food-item-three {
+    grid-area: three;
+}
+.menu-area > .food-item-four {
+    grid-area: four;
+}
+.menu-area > .food-item-five {
+    grid-area: five;
+}
+.menu-area > .food-item-six {
+    grid-area: six;
+}
+
+.menu-area > .food-item-one, .menu-area > .food-item-two, .menu-area > .food-item-three, .menu-area > .food-item-four, .menu-area > .food-item-five, .menu-area > .food-item-six {
+    display: flex;
+    justify-content: center;
+}
