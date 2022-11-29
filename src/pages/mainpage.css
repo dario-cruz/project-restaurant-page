@@ -17,6 +17,8 @@
     will-change: transform;
     transition: transform 450ms;
     transition-delay: 0ms;
+    line-height: 86%;
+
 }
 
 .mainpage > .textcontent:hover {
@@ -31,6 +33,7 @@
     will-change: transform;
     transition: transform 450ms;
     transition-delay: 0ms;
+    width: clamp(60px, 70%, 800px);
 }
 .mainpage > #chlogo:hover {
     transition: transform 125ms;

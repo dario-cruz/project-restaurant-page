@@ -35,25 +35,29 @@
     font-size: 9pt;
     color: white;
 }
-.left-side > #logo {
-    width: 120px;
-}
 
+.right-side > .menu:hover, .right-side > .directions:hover, .right-side > .about:hover {
+    
+    text-decoration: underline;
+}
 .right-side > .menu {
     grid-area: menu;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .right-side > .directions {
     grid-area: directions;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .right-side > .about {
     grid-area: about;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
