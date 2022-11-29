@@ -11,7 +11,7 @@
     background-color: #a77e58;
     box-shadow: 0px 3px 5px black;
 }
-.navbar >.left-side {
+.navbar > .left-side {
     grid-area: left;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@
     font-family: "Krona";
     padding-left: 15px;
     color: white;
+    cursor: pointer;
 }
 .left-side > .titleslogan {
     margin-top: -15px;

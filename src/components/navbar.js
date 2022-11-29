@@ -3,6 +3,8 @@ import './navbar.css'
 import '../index.css'
 import blackLogo from '../logo/carbhouse-black.webp'
 import whiteLogo from '../logo/carbhouse-white.webp'
+
+
 const renderNav = () => {
     // Define elements to be added.
     const navBar = document.createElement('div')
