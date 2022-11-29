@@ -1,5 +1,5 @@
 import './mainpage.css'
-import '../style.css'
+import '../index.css'
 import { pageContainer } from '..'
 import logoImage from '../logo/carbhouse-white.webp'
 
