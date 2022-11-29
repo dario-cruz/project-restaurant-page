@@ -23,14 +23,6 @@
     src: url(./fonts/Krona\ One\ Regular.ttf);
 }
 
-html {
-    background: url(./imgs/carbhouse-background.jpg) no-repeat center center fixed;
-    -webkit-backgroundsize: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 #container {
     display: grid;
     grid-template: 100px 4fr 1fr / 1fr 4fr 1fr;
