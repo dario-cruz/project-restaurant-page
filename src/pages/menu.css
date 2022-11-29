@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "cornbread";
+    src: url(../fonts/Cornbread-Regular.ttf);
+}
+
 .menupage {
     background: url(../imgs/menu-background.jpg) no-repeat center center fixed;
     -webkit-backgroundsize: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: black;
+    /* filter: brightness(60%); */
 }
 
 #container {
@@ -34,8 +41,9 @@
     "three four"
     "five six";
     color: white;
+    background-color: rgb(0, 0, 0, 0.3);
 }
-
+/* Grid positioning for elements. */
 .menu-area > .food-item-one {
     grid-area: one;
 }
@@ -54,8 +62,14 @@
 .menu-area > .food-item-six {
     grid-area: six;
 }
-
+/* Center all text on menu items. */
 .menu-area > .food-item-one, .menu-area > .food-item-two, .menu-area > .food-item-three, .menu-area > .food-item-four, .menu-area > .food-item-five, .menu-area > .food-item-six {
     display: flex;
     justify-content: center;
+}
+/* Change font on all menu heading elems. */
+.food-item-one > h1, .food-item-two > h1, .food-item-three > h1, .food-item-four > h1, .food-item-five > h1, .food-item-six > h1 {
+    font-family: 'cornbread';
+    font-size: 25pt;
+    letter-spacing: 5px;
 }
