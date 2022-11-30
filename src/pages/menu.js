@@ -31,6 +31,7 @@ const renderMenu = () => {
     menuDiv.appendChild(foodItemFive)
     menuDiv.appendChild(foodItemSix)
 
+    // Menu Titles
     const foodItemOneTitle = document.createElement('h1')
     const foodItemTwoTitle = document.createElement('h1')
     const foodItemThreeTitle = document.createElement('h1')
@@ -50,7 +51,7 @@ const renderMenu = () => {
     foodItemThreeTitle.innerText = "Coffee"
     foodItemFourTitle.innerText = "Cakes"
     foodItemFiveTitle.innerText = "Pastries"
-    foodItemSixTitle.innerText = "Macaroons"
+    foodItemSixTitle.innerText = "Macarons"
 
     foodItemOne.appendChild(foodItemOneTitle)
     foodItemTwo.appendChild(foodItemTwoTitle)
@@ -58,6 +59,78 @@ const renderMenu = () => {
     foodItemFour.appendChild(foodItemFourTitle)
     foodItemFive.appendChild(foodItemFiveTitle)
     foodItemSix.appendChild(foodItemSixTitle)
+
+    // Items lists for each menu section.
+    const foodItemOneList = document.createElement('dl')
+    const foodItemTwoList = document.createElement('dl')
+    const foodItemThreeList = document.createElement('dl')
+    const foodItemFourList = document.createElement('dl')
+    const foodItemFiveList = document.createElement('dl')
+    const foodItemSixList = document.createElement('dl')
+    
+    foodItemOneList.setAttribute('class', 'item-one-list')
+    foodItemTwoList.setAttribute('class', 'item-two-list')
+    foodItemThreeList.setAttribute('class', 'item-three-lis')
+    foodItemFourList.setAttribute('class', 'item-four-list')
+    foodItemFiveList.setAttribute('class', 'item-five-list')
+    foodItemSixList.setAttribute('class', 'item-six-list')
+
+    // List content.
+    foodItemOneList.innerHTML = `
+    <dt>Baguette</dt>
+    <dt>Sourdough</dt>
+    <dt>Rye</dt>
+    <dt>Brioche</dt>
+    <dt>Ciabatta</dt>
+    <dt>Pita</dt>
+    `
+    foodItemTwoList.innerHTML = `
+    <dt>Ham & Cheese Croissant</dt>
+    <dt>Country Style Omelet</dt>
+    <dt>Breakfast Platter</dt>
+    <dt>New York Steak & Eggs</dt>
+    <dt>Ham & Cheese Croissant</dt>
+    `
+    foodItemThreeList.innerHTML = `
+    <dt>Americano</dt>
+    <dt>Double Espresso</dt>
+    <dt>Macchiato</dt>
+    <dt>Latte</dt>
+    <dt>Cappuccino</dt>
+    <dt>Mocha</dt>
+    <dt>Hot Chocolate</dt>
+    `
+    foodItemFourList.innerHTML = `
+    <dt>Brownie Slice</dt>
+    <dt>Apple Pie</dt>
+    <dt>Cheese Cake</dt>
+    <dt>Tiramisu</dt>
+    <dt>Red Velvet</dt>
+    `
+    foodItemFiveList.innerHTML = `
+    <dt>Bear Claw</dt>
+    <dt>Beaver Tail</dt>
+    <dt>Cronut</dt>
+    <dt>Cheese Danish</dt>
+    <dt>Canoli</dt>
+    <dt>Rainbow Cookie</dt>
+    `
+
+    foodItemSixList.innerHTML =`
+    <dt>Bear Claw</dt>
+    <dt>Beaver Tail</dt>
+    <dt>Cronut</dt>
+    <dt>Cheese Danish</dt>
+    <dt>Canoli</dt>
+    <dt>Rainbow Cookie</dt>
+    `
+
+    foodItemOne.appendChild(foodItemOneList)
+    foodItemTwo.appendChild(foodItemTwoList)
+    foodItemThree.appendChild(foodItemThreeList)
+    foodItemFour.appendChild(foodItemFourList)
+    foodItemFive.appendChild(foodItemFiveList)
+    foodItemSix.appendChild(foodItemSixList)
 
     pageBody.setAttribute('class', 'menupage')
 
