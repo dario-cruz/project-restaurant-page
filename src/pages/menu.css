@@ -43,7 +43,7 @@
     color: white;
     background-color: rgb(0, 0, 0, 0.3);
 }
-/* Grid positioning for elements. */
+/* || Grid positioning for elements. */
 .menu-area > .food-item-one {
     grid-area: one;
 }
@@ -65,7 +65,9 @@
 /* Center all text on menu items. */
 .menu-area > .food-item-one, .menu-area > .food-item-two, .menu-area > .food-item-three, .menu-area > .food-item-four, .menu-area > .food-item-five, .menu-area > .food-item-six {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 /* Change font on all menu heading elems. */
 .food-item-one > h1, .food-item-two > h1, .food-item-three > h1, .food-item-four > h1, .food-item-five > h1, .food-item-six > h1 {
@@ -73,3 +75,11 @@
     font-size: 25pt;
     letter-spacing: 5px;
 } 
+
+/* || List Styling. */
+dl {
+    text-align: right;
+}
+dt::after {
+    content: " - ";
+}

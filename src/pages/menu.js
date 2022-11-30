@@ -78,11 +78,17 @@ const renderMenu = () => {
     // List content.
     foodItemOneList.innerHTML = `
     <dt>Baguette</dt>
+    <dd>$4.50</dd>
     <dt>Sourdough</dt>
+    <dd>$5.10</dd>
     <dt>Rye</dt>
+    <dd>$2.25</dd>
     <dt>Brioche</dt>
+    <dd>$2.10</dd>
     <dt>Ciabatta</dt>
+    <dd>$5.00</dd>
     <dt>Pita</dt>
+    <dd>$1.00</dd>
     `
     foodItemTwoList.innerHTML = `
     <dt>Ham & Cheese Croissant</dt>
