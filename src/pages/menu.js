@@ -77,58 +77,52 @@ const renderMenu = () => {
 
     // List content.
     foodItemOneList.innerHTML = `
-    <dt>Baguette</dt>
-    <dd>$4.50</dd>
-    <dt>Sourdough</dt>
-    <dd>$5.10</dd>
-    <dt>Rye</dt>
-    <dd>$2.25</dd>
-    <dt>Brioche</dt>
-    <dd>$2.10</dd>
-    <dt>Ciabatta</dt>
-    <dd>$5.00</dd>
-    <dt>Pita</dt>
-    <dd>$1.00</dd>
+    <dt>Baguette - $3.50</dt>
+    <dt>Sourdough - $4.00</dt>
+    <dt>Rye - $2.00</dt>
+    <dt>Brioche - $4.00</dt>
+    <dt>Ciabatta - $3.40</dt>
+    <dt>Pita - $1.50</dt>
     `
     foodItemTwoList.innerHTML = `
-    <dt>Ham & Cheese Croissant</dt>
-    <dt>Country Style Omelet</dt>
-    <dt>Breakfast Platter</dt>
-    <dt>New York Steak & Eggs</dt>
-    <dt>Ham & Cheese Croissant</dt>
+    <dt>Ham & Cheese Croissant - $2.95</dt>
+    <dt>Country Style Omelet - $5.45</dt>
+    <dt>Breakfast Platter - $8.40</dt>
+    <dt>New York Steak & Eggs - $10.00</dt>
+    <dt>Bacon, Egg & Cheese Croissant - $5.00</dt>
     `
     foodItemThreeList.innerHTML = `
-    <dt>Americano</dt>
-    <dt>Double Espresso</dt>
-    <dt>Macchiato</dt>
-    <dt>Latte</dt>
-    <dt>Cappuccino</dt>
-    <dt>Mocha</dt>
-    <dt>Hot Chocolate</dt>
+    <dt>Americano - $2.65</dt>
+    <dt>Double Espresso - $3.10</dt>
+    <dt>Macchiato - $3.75</dt>
+    <dt>Latte - $2.95</dt>
+    <dt>Cappuccino - $2.25</dt>
+    <dt>Mocha - $3.10</dt>
+    <dt>Hot Chocolate - #2.40</dt>
     `
     foodItemFourList.innerHTML = `
-    <dt>Brownie Slice</dt>
-    <dt>Apple Pie</dt>
-    <dt>Cheese Cake</dt>
-    <dt>Tiramisu</dt>
-    <dt>Red Velvet</dt>
+    <dt>Brownie Slice - $4.50</dt>
+    <dt>Apple Pie - $3.75</dt>
+    <dt>Cheese Cake - $5.50</dt>
+    <dt>Tiramisu - $6.10</dt>
+    <dt>Red Velvet - $7.00</dt>
     `
     foodItemFiveList.innerHTML = `
-    <dt>Bear Claw</dt>
-    <dt>Beaver Tail</dt>
-    <dt>Cronut</dt>
-    <dt>Cheese Danish</dt>
-    <dt>Canoli</dt>
-    <dt>Rainbow Cookie</dt>
+    <dt>Bear Claw - $3.00</dt>
+    <dt>Beaver Tail - $4.20</dt>
+    <dt>Cronut - $5.55</dt>
+    <dt>Cheese Danish - $1.40</dt>
+    <dt>Canoli - $3.00</dt>
+    <dt>Rainbow Cookie - $1.20</dt>
     `
 
     foodItemSixList.innerHTML =`
-    <dt>Bear Claw</dt>
-    <dt>Beaver Tail</dt>
-    <dt>Cronut</dt>
-    <dt>Cheese Danish</dt>
-    <dt>Canoli</dt>
-    <dt>Rainbow Cookie</dt>
+    <dt>Vanilla - $5.40</dt>
+    <dt>Chocolate - $5.40</dt>
+    <dt>Strawberry - $1.50</dt>
+    <dt>Tres Leche - $5.55</dt>
+    <dt>24 Pack (Assorted) - $49.00</dt>
+    <dt>48 Pack (Assorted) - $69.50</dt>
     `
 
     foodItemOne.appendChild(foodItemOneList)

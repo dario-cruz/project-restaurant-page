@@ -78,8 +78,6 @@
 
 /* || List Styling. */
 dl {
+    font-family: 'Mallanna';
     text-align: right;
-}
-dt::after {
-    content: " - ";
 }
