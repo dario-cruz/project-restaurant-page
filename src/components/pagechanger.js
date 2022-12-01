@@ -33,7 +33,7 @@ const addMenuEvents = () => {
     const homeButton = document.querySelector('.left-side')
     // Add event listeners to buttons.
     homeButton.addEventListener('click', changePage('home'))
-    menuButton.addEventListener('click',changePage('menu'))
+    menuButton.addEventListener('click', changePage('menu'))
     directionsButton.addEventListener('click', changePage('directions'))
     aboutButton.addEventListener('click', changePage('about'))
 }

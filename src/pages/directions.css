@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.directions-page {
+    background: url(../imgs/directions-background.jpg) no-repeat center center fixed;
+    -webkit-backgroundsize: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.directions-div {
+    grid-area: center;
+    border:3px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.text-content {
+    color: white;
+    text-align: center;
+    font-family: 'Mallanna';
+}
+h1.text-heading {
+    font-size: 30pt;
+}
+p.text-para {
+    margin-top: -20px;
+    font-size: large;
+}
