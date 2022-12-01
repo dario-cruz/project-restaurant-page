@@ -41,7 +41,7 @@
     "three four"
     "five six";
     color: white;
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0, 0.5);
 }
 /* || Grid positioning for elements. */
 .menu-area > .food-item-one {
