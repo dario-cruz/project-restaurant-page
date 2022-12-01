@@ -1,5 +1,6 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin') 
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackCDNInject = require('webpack-cdn-inject')
 
 module.exports = {
     mode: 'development',
@@ -11,6 +12,9 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'CarbHouse: Breads and Pastries!',
+        }),
+        new WebpackCDNInject({
+            head: ['https://maps.googleapis.com/maps/api/js?key=AIzaSyAMTNzJVRKjx083WotVZeuO8B5aRjyjZE4&callback=initMap']
         }),
     ],
     devtool: 'inline-source-map',

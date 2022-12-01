@@ -32,7 +32,10 @@
 }
 .text-address {
     grid-area: location;
+    padding: 10px;
 }
 .text-hours {
     grid-area: hours;
+    padding: 10px;
+
 }
