@@ -8,30 +8,42 @@ const renderDirections = () => {
     const directionsDiv = document.createElement('div')
     const textContentDiv = document.createElement('div')
     const mapContentDiv = document.createElement('div')
+    const textAddress = document.createElement('div')
+    const textHours = document.createElement('div')
     
-    const textHeading = document.createElement('h1')
-    const textPara = document.createElement('p')
-
     directionsDiv.setAttribute('class', 'directions-div')
     textContentDiv.setAttribute('class', 'text-content')
     mapContentDiv.setAttribute('class', 'map-content')
 
-    textHeading.setAttribute('class', 'text-heading')
-    textPara.setAttribute('class', 'text-para')
+    textAddress.setAttribute('class', 'text-address')
+    textHours.setAttribute('class', 'text-hours')
 
-    textHeading.innerText = "Directions"
-    textPara.innerText =`
-    Back in 2019 before the pandemic, two dudes and a dog decided that there was a need.
-    The need was for a palace of delectable pastries, cakes, and cookies. This is were CarbHouse can to be. 
-    Since then the founders and a small crew of expert bakers have been bringing carb-loaded love to the lower east side.
+    textAddress.innerHTML = `
+    <h1>LES Location</h1>
+    <p>550 Bergen Crossing</p>
+    <p>New York, NY 10023</p>
+    <p>Corner of Bergen and Lafayette</p>
+    <p>A Train to Bergen MetroTech</p>
+    <h1>Brooklyn Location</h1>
+    <p>Coming 2023</p>
+    `
+    textHours.innerHTML = `
+    <h1>Hours of Operation</h1>
+    <p>Monday - 9am - 6:30pm</p>
+    <p>Tuesday - 9am - 6:30pm</p>
+    <p>Wednesday - 9am - 6:30pm</p>
+    <p>Thursday - 9am - 6:30pm</p>
+    <p>Friday - 9am - 6:30pm</p>
+    <p>Saturday - 12pm - 5:30pm</p>
+    <p>Sunday - Closed</p>
     `
 
     // Append all the things
     directionsDiv.appendChild(textContentDiv)
 
 
-    textContentDiv.appendChild(textHeading)
-    textContentDiv.appendChild(textPara)
+    textContentDiv.appendChild(textAddress)
+    textContentDiv.appendChild(textHours)
 
 
     // Append all the generated content to the main page.

@@ -14,16 +14,25 @@
     grid-area: center;
     border:3px solid white;
     background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template: 1fr 2fr / 1fr 1fr;
+    grid-template-areas: 
+    "content content"
+    "map map";
 }
 .text-content {
     color: white;
     text-align: center;
     font-family: 'Mallanna';
+    display: grid;
+    grid-area: content;
+    grid-template: 1fr 1fr;
+    grid-template-areas: "location hours";
+    border-bottom: 3px solid white;
 }
-h1.text-heading {
-    font-size: 30pt;
+.text-address {
+    grid-area: location;
 }
-p.text-para {
-    margin-top: -20px;
-    font-size: large;
+.text-hours {
+    grid-area: hours;
 }
