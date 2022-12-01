@@ -19,7 +19,7 @@ const renderDirections = () => {
     textHeading.setAttribute('class', 'text-heading')
     textPara.setAttribute('class', 'text-para')
 
-    textHeading.innerText = "About Carbhouse"
+    textHeading.innerText = "Directions"
     textPara.innerText =`
     Back in 2019 before the pandemic, two dudes and a dog decided that there was a need.
     The need was for a palace of delectable pastries, cakes, and cookies. This is were CarbHouse can to be. 
