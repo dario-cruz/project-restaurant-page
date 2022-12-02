@@ -1,4 +1,5 @@
 # project-restaurant-page
 
-## Resources
-- https://alvarotrigo.com/fullPage/#
+![screenshot](screenshot.png)
+
+- Live: [Live](https://dario-cruz.github.io/project-restaurant-page/)
