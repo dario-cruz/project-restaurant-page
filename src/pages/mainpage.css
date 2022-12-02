@@ -13,12 +13,14 @@
 }
 
 .mainpagediv {
+    grid-area: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .mainpagediv > .textcontent {
+    text-align: center;
     color: white;
     font-family: 'Mallanna';
     font-size: x-large;

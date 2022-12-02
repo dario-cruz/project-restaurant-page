@@ -3,6 +3,12 @@ import { pageContainer } from '..'
 
 
 const renderDirections = () => {
+    // Attach google maps cdn for api call. 
+    const mapScript = document.createElement('script')
+    // mapScript.setAttribute('defer', 'defer')
+    mapScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    document.body.appendChild(mapScript)
+
     document.body.setAttribute('class', 'directions-page')
 
     const directionsDiv = document.createElement('div')

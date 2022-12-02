@@ -22,7 +22,7 @@ const renderMainPage = () => {
 
 
     // Insert content into elements
-    textContent.innerText = "Welcome to CarbHouse the palace of lost gains and a round gut. Please make yourself at home and take a look at the menu."
+    textContent.innerText = "Welcome to CarbHouse the palace of lost gains and a round gut. Please make yourself at home and take a look at the menu and follow us on all the socials!🍞🥐🥖🥪❤️❤️❤️"
 
     // Append the elements
     mainPageDiv.appendChild(chLogo)
