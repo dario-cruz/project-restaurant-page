@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.about-page {
+    background: url(../imgs/about-background.jpg) no-repeat center center fixed;
+    -webkit-backgroundsize: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+}
+.about-div {
+    grid-area: center;
+    border: 3px solid white;
+    display: grid;
+    grid-template: 0.5fr 1fr 1fr / 1fr;
+    grid-template-areas: 
+    "top"
+    "bottom"
+    "bottom";
+    color: white;
+}
+.about-heading-div {
+    grid-area: top;
+    text-align: center;
+    font-family: 'Krona';
+    padding: 20px;
+}
+.about-text-div {
+    grid-area: bottom;
+    padding: 20px;
+}
+

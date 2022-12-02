@@ -21,5 +21,6 @@ renderNav()
 // addMenuEvents()
 // renderMainPage()
 // renderMenu()
-renderDirections()
+// renderDirections()
+renderAbout()
 export {pageContainer}
