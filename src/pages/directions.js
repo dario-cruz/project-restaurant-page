@@ -10,14 +10,17 @@ const renderDirections = () => {
     const mapContentDiv = document.createElement('div')
     const textAddress = document.createElement('div')
     const textHours = document.createElement('div')
-    
+    const googleMap = document.createElement('div')
+
     directionsDiv.setAttribute('class', 'directions-div')
     textContentDiv.setAttribute('class', 'text-content')
     mapContentDiv.setAttribute('class', 'map-content')
+    googleMap.setAttribute('id', 'map')
 
     textAddress.setAttribute('class', 'text-address')
     textHours.setAttribute('class', 'text-hours')
 
+    // Informational content for text based areas.
     textAddress.innerHTML = `
     <h1>LES Location</h1>
     <p>550 Bergen Crossing</p>
@@ -38,12 +41,29 @@ const renderDirections = () => {
     <p>Sunday - Closed</p>
     `
 
+    // Map setup.
+    function initMap() {
+        const bakeryLoc = { lat: -25.333, lng: 131.031 }
+        const map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: bakeryLoc,
+        })
+        const mapMarker = new google.maps.Marker({
+            position: bakeryLoc,
+            map: map,
+        })
+    }
+    window.initMap = initMap
+
     // Append all the things
     directionsDiv.appendChild(textContentDiv)
+    directionsDiv.appendChild(mapContentDiv)
 
+    mapContentDiv.appendChild(googleMap)
 
     textContentDiv.appendChild(textAddress)
     textContentDiv.appendChild(textHours)
+    
 
 
     // Append all the generated content to the main page.

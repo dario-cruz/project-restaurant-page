@@ -12,6 +12,10 @@ pageContainer.setAttribute('id', 'container')
 document.body.appendChild(pageContainer)
 console.log(pageContainer)
 
+const mapScript = document.createElement('script')
+// mapScript.setAttribute('defer', 'defer')
+mapScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+document.body.appendChild(mapScript)
 
 renderNav()
 // addMenuEvents()

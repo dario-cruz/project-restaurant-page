@@ -20,6 +20,16 @@
     "content content"
     "map map";
 }
+.map-content {
+    grid-area: map;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#map {
+    height: 400px;
+    width: 650px;
+}
 .text-content {
     color: white;
     text-align: center;
