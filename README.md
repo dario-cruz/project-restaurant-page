@@ -2,4 +2,4 @@
 
 ![screenshot](screenshot.png)
 
-- Live: [Live](https://dario-cruz.github.io/project-restaurant-page/)
+- [Live Demo](https://dario-cruz.github.io/project-restaurant-page/)
