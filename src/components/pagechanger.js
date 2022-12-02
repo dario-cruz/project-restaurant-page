@@ -28,9 +28,13 @@ const changePage = (page) => {
 const addMenuEvents = () => {
     // Define menu buttons.
     const menuButton = document.querySelector('.menu')
+    console.log(menuButton)
     const directionsButton = document.querySelector('.directions')
+    console.log(directionsButton)
     const aboutButton = document.querySelector('.about')
+    console.log(aboutButton)
     const homeButton = document.querySelector('.left-side')
+    console.log(homeButton)
     // Add event listeners to buttons.
     homeButton.addEventListener('click', changePage('home'))
     menuButton.addEventListener('click', changePage('menu'))

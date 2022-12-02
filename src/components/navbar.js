@@ -1,5 +1,5 @@
 import { pageContainer } from ".."
-import { addMenuEvents } from "./pagechanger"
+// import { addMenuEvents } from "./pagechanger"
 import './navbar.css'
 import '../index.css'
 import blackLogo from '../logo/carbhouse-black.webp'
@@ -47,19 +47,6 @@ const renderNav = () => {
     navBar.appendChild(leftDiv)
 
     pageContainer.appendChild(navBar)
-
-    // Add click eventlisteners for menu elements.
-    // addMenuEvents()
-
-    return {
-        navBar,
-        leftDiv,
-        rightDiv,
-        navMenu,
-        navAbout,
-        navDirections,
-    }
 }
-
 
 export { renderNav }

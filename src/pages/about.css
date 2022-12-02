@@ -13,7 +13,7 @@
 }
 .about-div {
     grid-area: center;
-    border: 3px solid white;
+    border: 4px solid white;
     display: grid;
     grid-template: 0.5fr 1fr 1fr / 1fr;
     grid-template-areas: 
@@ -21,6 +21,7 @@
     "bottom"
     "bottom";
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .about-heading-div {
     grid-area: top;
@@ -31,5 +32,8 @@
 .about-text-div {
     grid-area: bottom;
     padding: 20px;
+    font-family: 'Mallanna';
+    font-size: x-large;
+    text-align: center;
 }
 
