@@ -2,8 +2,7 @@ import { pageContainer } from ".."
 // import { addMenuEvents } from "./pagechanger"
 import './navbar.css'
 import '../index.css'
-import blackLogo from '../logo/carbhouse-black.webp'
-import whiteLogo from '../logo/carbhouse-white.webp'
+import { changePage } from "./pagechanger"
 
 
 const renderNav = () => {
@@ -47,6 +46,20 @@ const renderNav = () => {
     navBar.appendChild(leftDiv)
 
     pageContainer.appendChild(navBar)
+
+    // Adding eventlistner for changing pages.
+    leftDiv.addEventListener('click', () => {
+        changePage('home')
+    })
+    navMenu.addEventListener('click', () => {
+        changePage('menu')
+    })
+    navDirections.addEventListener('click', () => {
+        changePage('directions')
+    })
+    navAbout.addEventListener('click', () => {
+        changePage('about')
+    })
 }
 
 export { renderNav }
