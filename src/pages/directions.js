@@ -6,7 +6,7 @@ const renderDirections = () => {
     // Attach google maps cdn for api call. 
     const mapScript = document.createElement('script')
     // mapScript.setAttribute('defer', 'defer')
-    mapScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    mapScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAMTNzJVRKjx083WotVZeuO8B5aRjyjZE4&callback=initMap"
     pageContainer.appendChild(mapScript)
 
     document.body.setAttribute('class', 'directions-page')
